@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    >
+
+  <genericsetup:upgradeSteps
+      profile="intranet_trece:default"
+      source="20240521001"
+      destination="20240521002"
+      >
+    <genericsetup:upgradeDepends
+        title="Altera timezone para America/Campo_Grande"
+        import_steps="plone.app.registry"
+        />
+  </genericsetup:upgradeSteps>
+
+
+</configure>
